@@ -18,7 +18,7 @@ pipeline {
         stage('Test') {
             steps {
                 script {
-                    sh './${BUILD_NAME}'
+                    sh './${BUILD_NAME}' errorror
                 }
             }
         }
